@@ -9,14 +9,15 @@
   .navbar
     &-top
       padding: 30px 0
-    &__search
-      margin-left: auto
-      max-width: 340px
     &-menu
       padding: 22px 0
       &__link
         font-size: 12px
         line-height: 15px
+  .search
+    &__input
+      margin-left: auto
+      width: 340px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -36,6 +37,7 @@
       border: none
       background-color: $light
       cursor: pointer
+      padding: 0
       &__line
         width: 16px
         height: 1px

@@ -378,13 +378,13 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-
-.navbar__menu-button {
-  display: none;
 }
 
 .navbar-bottom {
@@ -490,16 +490,16 @@ template {
   .navbar-top {
     padding: 30px 0;
   }
-  .navbar__search {
-    margin-left: auto;
-    max-width: 340px;
-  }
   .navbar-menu {
     padding: 22px 0;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    margin-left: auto;
+    width: 340px;
   }
 }
 
@@ -530,6 +530,7 @@ template {
     border: none;
     background-color: #fff;
     cursor: pointer;
+    padding: 0;
   }
   .menu-button__line {
     width: 16px;
