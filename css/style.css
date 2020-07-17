@@ -678,8 +678,8 @@ template {
     margin-left: 0;
   }
   .stars {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 
