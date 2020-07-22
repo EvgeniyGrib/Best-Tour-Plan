@@ -797,6 +797,88 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.newsletter:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px;
+  max-width: 731px;
+  margin: auto;
+}
+
+.newsletter-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-title__strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  padding-right: 75px;
+  border: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  min-width: 65px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
