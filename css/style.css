@@ -884,7 +884,7 @@ template {
   padding: 40px 0 70px 0;
 }
 
-.reviews__title {
+.reviews-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
@@ -1197,7 +1197,7 @@ template {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
-  .reviews__title {
+  .reviews-title {
     font-size: 30px;
     line-height: 38px;
   }
@@ -1230,7 +1230,7 @@ template {
   .subscribe {
     width: 100%;
   }
-  .reviews__title {
+  .reviews-title {
     font-size: 18px;
     line-height: 23px;
   }
