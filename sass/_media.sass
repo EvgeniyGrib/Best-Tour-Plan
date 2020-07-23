@@ -3,8 +3,8 @@
     max-width: 960px
   .slider
     width: 590px
-  .swiper
-    &-slide
+  .hotel
+    &-slider
       &__image
         height: 100%
         width: 100%
@@ -37,12 +37,16 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
-  .slider
-    width: 100%
+    &-slider
+      width: 100%
   .booking
     width: 340px
   .map  
     width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 
 
 
@@ -75,6 +79,9 @@
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
+    &-right
+      flex-direction: column
+      min-height: 450px
     &-info
       &__text
         width: 100%
@@ -87,14 +94,10 @@
       &__offer
         order: -1 // Блок улетает наверх
         margin-left: 0
+    &-slider
+      height: 350px 
   .stars
     flex-basis: auto
-  .slider
-    height: 350px
-  .hotel
-    &-right
-      flex-direction: column
-      min-height: 450px
   .booking
     width: 100%
   .map
@@ -105,6 +108,28 @@
       max-width: 576px
       width: 92%
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          margin-left: -65px
+          transform: translateX(-50%)
+        &--next
+          right: 50%
+          margin-right: -65px
+          transform: translateX(50%)
+    &__title
+      font-size: 30px
+      line-height: 38px
+          
+
 
 
 
@@ -112,11 +137,13 @@
 @media ( max-width:576px )
   .logo
     width: 99px
-  .slider
-    height: 250px
+  
   .hotel
     &__slider
       margin-bottom: 20px
+    &-slider
+      height: 250px
+      
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -129,6 +156,15 @@
         line-height: 38px
   .subscribe
     width: 100%
+  
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__text
+        text-align: left
+
 
      
   
