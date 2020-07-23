@@ -1183,7 +1183,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 255px;
+    height: 250px;
   }
   .card__title {
     max-width: 200px;
