@@ -9,7 +9,11 @@
         height: 100%
         width: 100%
         object-fit: cover // не сжимает изображение, а обрезает и остается центральная часть картинки
-      
+  .card
+    width: 220px
+    height: 220px
+    &__title
+      max-width: 150px
 
 
 @media (max-width: 992px)
@@ -47,6 +51,16 @@
     &-slider
       &__item
         max-width: 580px
+  .activities 
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 255px
+    &__title
+      max-width: 200px
 
 
 
@@ -128,6 +142,15 @@
     &-title
       font-size: 30px
       line-height: 38px
+  .card
+    width: 48.2%
+    height: 220px
+    &__title
+      max-width: 150px
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+
           
 
 
@@ -164,6 +187,11 @@
     &-slider
       &__text
         text-align: left
+  .card
+    width: 100%
+    &__title
+      max-width: 200px
+    
 
 
      
