@@ -1,0 +1,66 @@
+.activities
+  padding: 60px 0px 98px 0
+  &__title
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    margin-bottom: 57px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+
+
+.card
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 255px
+  height: 255px
+  border-radius: 6px
+  overflow: hidden // выходящее за пределы карточки скрывать
+  font-style: normal
+  &::before
+    content: ''
+    position: absilute
+    height: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+    
+  &__image
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    object-fit: cover
+    z-index: -1
+  &__title
+    position: absolute
+    bottom: 72px
+    left: 26px
+    margin: 0
+    max-width: 200px
+    color: white
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+
+  &__button
+    position: absolute
+    bottom: 24px
+    left: 26px
+    padding: 7px 21px
+    width: 100px
+    height: 30px
+    font-family: Nunito
+    font-weight: 600
+    font-size: 12px
+    line-height: 16px
+    border-radius: 4px
+
+
+
