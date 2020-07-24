@@ -1,3 +1,4 @@
+// ======== SWIPER ==============
 var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
@@ -27,6 +28,8 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
+// ========= MAP ==================
+
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
@@ -46,3 +49,7 @@ function init() {
   );
   myMap.geoObjects.add(placemark);
 }
+
+// ======== PARALAX ===================
+
+$(".newsletter-parallax").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
