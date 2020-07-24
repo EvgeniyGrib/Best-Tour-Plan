@@ -574,6 +574,8 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 .hotel-slider__item {
