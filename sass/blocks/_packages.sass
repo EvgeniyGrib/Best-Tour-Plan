@@ -1,0 +1,96 @@
+.packages
+  color: white
+  &__heading
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    color: #333333
+    text-align: center
+    text-transform: uppercase
+  &-cards
+    display: grid
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr)
+    column-gap: 30px
+    row-gap: 30px
+.package
+  &-active
+    display: grid
+    grid-template: 1fr / repeat(2, 1fr)
+    // width: 730px
+    grid-column: span 2
+    &--picture
+      position: relative
+      height: 500px
+      
+      &__image
+        height: 100%
+        width: 400px
+        overflow: hidden
+        border-radius: 8px 0px 0px 8px
+
+        
+      &__offer
+        position: absolute
+        padding: 7px 12px
+        background-color: $primary
+        top: 26px
+        left: 0
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px
+        border-radius: 0px 4px 4px 0px
+        
+    &--info
+      position: relative
+      background-color: $dark
+      padding: 47px 21px 30px 44px
+      width: 364px
+      height: 500px
+      border-radius: 0px 8px 8px 0px
+      &__rating
+        margin-bottom: 6px
+      &__heading
+        margin: 0 0 27px 0
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+      &__text
+        margin: 0 0 34px 0
+        font-weight: normal
+        font-size: 14px
+        line-height: 160.6%
+      &__item
+        display: flex
+        align-items: center
+        margin-bottom: 11px
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        &--icon
+          margin-right: 15px
+      &__item:nth-last-child(3)
+        margin-bottom: 37px
+        
+      &--price
+        display: flex
+        flex-direction: column
+
+        &__old
+          font-weight: normal
+          font-size: 14px
+          line-height: 18px
+          text-decoration-line: line-through
+        &__new
+          font-weight: bold
+          font-size: 24px
+          line-height: 30px
+      &__button
+        position: absolute
+        right: 21px
+        bottom: 30px
+        padding: 10px 26px
+        border-radius: 4px
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+
