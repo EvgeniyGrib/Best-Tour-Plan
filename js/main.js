@@ -52,4 +52,4 @@ function init() {
 
 // ======== PARALAX ===================
 
-$(".newsletter-parallax").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
+$(".newsletter-parallax").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
