@@ -37,13 +37,12 @@ function init() {
     zoom: 15,
     // behaviors: [], // если при наведении крутить колесик, то карта не будет зумиться
   });
-
-  myMap.geoObjects;
-
-  // var placemark = new ymaps.Placemark(
-  //   [12.934923151175724, 100.88307986706273],
-  //   {}
-  // );
-
-  // map.geoObjects.add(placemark);
+  // Метка ------------------
+  var placemark = new ymaps.Placemark(
+    [12.934923151175724, 100.88307986706273],
+    {
+      hintContent: "Hilton Hotel", // при наведении всплывает подсказка
+    }
+  );
+  myMap.geoObjects.add(placemark);
 }
