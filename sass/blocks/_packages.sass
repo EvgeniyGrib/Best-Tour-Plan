@@ -17,19 +17,23 @@
       color: white
 
 .active   
+  
   &-card
     display: grid
     grid-template: 500px / repeat(2, 365px)
+    grid-column: span 2
 
   &-picture
     position: relative
+   
     height: 500px
     &__image
+      
       height: 100%
       width: 366px
       overflow: hidden
       object-fit: cover
-      border-radius: 8px 8px 8px 8px
+      border-radius: 8px 0px 0px 8px
     &__offer
       position: absolute
       padding: 7px 12px
@@ -46,6 +50,7 @@
     background-color: $dark
     padding: 47px 21px 30px 44px
     border-radius: 0px 8px 8px 0px
+    
     &__rating
       margin-bottom: 6px
     &__title

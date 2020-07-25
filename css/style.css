@@ -1135,6 +1135,7 @@ template {
   -ms-grid-rows: 500px;
   -ms-grid-columns: (365px)[2];
       grid-template: 500px/repeat(2, 365px);
+  grid-column: span 2;
 }
 
 .active-picture {
@@ -1148,7 +1149,7 @@ template {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 .active-picture__offer {
@@ -1483,8 +1484,8 @@ template {
   }
   .packages-container__cards {
     -ms-grid-rows: (500px)[2];
-    -ms-grid-columns: (330px)[2];
-        grid-template: repeat(2, 500px)/repeat(2, 330px);
+    -ms-grid-columns: (335px)[2];
+        grid-template: repeat(2, 500px)/repeat(2, 335px);
   }
   .active-card {
     -ms-grid-rows: 500px;
@@ -1496,8 +1497,8 @@ template {
   }
   .inactive-card {
     -ms-grid-rows: (250px)[2];
-    -ms-grid-columns: 340px;
-        grid-template: repeat(2, 250px)/340px;
+    -ms-grid-columns: 335px;
+        grid-template: repeat(2, 250px)/335px;
   }
 }
 
@@ -1646,9 +1647,11 @@ template {
     -ms-grid-rows: (250px)[2];
     -ms-grid-columns: 100%;
         grid-template: repeat(2, 250px)/100%;
+    grid-column: span 1;
   }
   .active-picture__image {
     width: 100%;
+    border-radius: 8px 8px 8px 8px;
   }
   .active-info {
     padding: 15px 15px 20px 30px;
