@@ -130,6 +130,22 @@
         grid-column: span 5
         grid-row: 4
 
+    &-bottom
+      
+      &__info
+        margin-left: 0
+        padding-left: 0
+
+        &-span
+          white-space: nowrap // чтобы текст в спан не переносился
+          margin: 0 5px 0 5px 
+      &__image
+        justify-self: end
+        grid-column: 5 / 6
+        grid-column: end
+        width: 136px
+        height: 22px
+
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -254,8 +270,22 @@
         line-height: 15px
         padding: 7px 12px
   .footer
+    padding: 69px 0 21px 0
+    &-wrapper
+      grid-row-gap: 30px
+    &__button
+      margin: 0
     &__input
       flex-basis: 100%
+    &-bottom
+      display: grid
+      &__info
+        margin: 0
+        margin-bottom: 10px
+        
+      &__image
+        grid-column: 1
+        justify-self: start
 
 @media ( max-width:576px )
   .logo

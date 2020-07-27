@@ -70,7 +70,7 @@
   &__text
     color: $footer-text-color
     margin-top: 23px
-    margin-bottom: 22px
+    margin-bottom: 20px
   &__link
     text-decoration: none
     color: inherit
@@ -103,5 +103,31 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &-bottom
+    // display: grid 
+    display: flex
+    grid-column: 1 / 6
+    align-items: center
+
+    
+    &__info
+
+      grid-column: 1 / 5
+      font-size: 12px
+      line-height: 15px
+      color: white
+      margin: auto
+      padding-left: 77px
+
+      &-span
+        white-space: nowrap // чтобы текст в спан не переносился
+        margin: 0 5px 0 5px 
+    &__image
+     
+      grid-column: 5 / 6
+      width: 136px
+      height: 22px
+      
+
 
 
