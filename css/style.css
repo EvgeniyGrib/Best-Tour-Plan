@@ -1381,6 +1381,10 @@ template {
   padding-bottom: 46px;
 }
 
+.footer__legal {
+  margin-left: auto;
+}
+
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1972,6 +1976,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__list {
+    display: inline-block;
   }
   .footer-bottom {
     display: -ms-grid;
