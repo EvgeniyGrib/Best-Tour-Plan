@@ -802,6 +802,7 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+  z-index: 999;
 }
 
 .newsletter {
