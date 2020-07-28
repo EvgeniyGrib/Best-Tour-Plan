@@ -2133,6 +2133,7 @@ template {
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
