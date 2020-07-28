@@ -23,6 +23,7 @@ img {
   color: #fff;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -389,6 +390,7 @@ template {
 
 .navbar-bottom {
   background-color: #0A223D;
+  outline: none;
 }
 
 .navbar-menu {
@@ -1870,6 +1872,7 @@ template {
     background-color: #fff;
     cursor: pointer;
     padding: 0;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;
