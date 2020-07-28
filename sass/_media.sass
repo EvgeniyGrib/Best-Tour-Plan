@@ -150,9 +150,43 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user 
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px 
+        &--mobile
+          &--visible
+            display: block
+            margin-bottom: 40px
 
   .menu
     &-button
@@ -170,6 +204,15 @@
         width: 16px
         height: 1px
         background-color: $text-color
+
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
+
+
   .hotel
     &-name
       flex-basis: 100%
@@ -266,7 +309,7 @@
       &__image  
         width: 100%
       &__offer
-        font-size: 12px
+        font-size: 12px 
         line-height: 15px
         padding: 7px 12px
   .footer
