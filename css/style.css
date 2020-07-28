@@ -1661,9 +1661,8 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .search__input {
-    margin-left: auto;
-    width: 340px;
+  .navbar-menu__item_mobile_visible {
+    max-width: 95%;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
