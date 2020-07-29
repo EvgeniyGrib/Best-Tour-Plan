@@ -502,7 +502,7 @@ template {
 
 .breadcrumb-list__link {
   text-decoration: none;
-  color: inherit;
+  color: #333333;
 }
 
 .hotel {
@@ -802,7 +802,7 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
-  z-index: 999;
+  z-index: 99;
 }
 
 .newsletter {
@@ -2103,6 +2103,7 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-column-gap: 0;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2115,6 +2116,11 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__additional {
     -ms-grid-row: 3;
@@ -2148,6 +2154,12 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__title-inline {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .footer__massage {
     margin-bottom: 0;

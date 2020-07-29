@@ -5,9 +5,11 @@
     padding: 18px 0
     margin: 0
     list-style: none // пропадут точки списка
+    
     &__item // для всех элементов item
       font-size: 10px
       line-height: 13px
+      
       &:not(:last-child) // но кроме последнего
         &::after // после основного контента вставить дополнительный
           content: '/' // дополнительный контент - слеш
@@ -15,5 +17,6 @@
     &__link
       text-decoration: none
       color: inherit
+      
       
 
