@@ -20,7 +20,7 @@
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -34,7 +34,7 @@
           >
             <input
               type="text"
-              class="search__input"
+              class="input search__input"
               placeholder="Search Location"
             />
             <button class="search__button button">
@@ -82,7 +82,7 @@
               >
                 <input
                   type="text"
-                  class="search__input"
+                  class="input search__input"
                   placeholder="Search Location"
                 />
                 <button class="search__button button">
@@ -169,7 +169,11 @@
               Free
             </p>
           </div>
-          <div class="rating hotel-info__rating">
+          <div
+            data-toggle="modal"
+            data-href="#rating-modal"
+            class="rating hotel-info__rating"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter"
               >4.5/<span class="rating__counter-index">5</span></span
@@ -251,7 +255,13 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="booking__button button">View Other Options</button>
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="booking__button button"
+              >
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <!-- <div class="map-api"> -->
@@ -580,11 +590,16 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
 
-        <form action="#" class="subscribe newsletter__search">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__search"
+        >
           <input
             type="text"
-            class="subscribe__input"
+            class="input subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button button">Send</button>
         </form>
@@ -869,22 +884,23 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title-">Send us a message</h3>
-            <form class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
-                class="footer__input"
+                class="input footer__input"
                 placeholder="Your Full Name"
+                name="name"
               />
               <input
                 type="text"
-                class="footer__input"
+                class="input footer__input"
                 placeholder="Phone number"
+                name="phone"
               />
               <textarea
-                class="footer__massage"
-                cols="30"
-                rows="10"
-                placeholder="Massage"
+                class="message footer__massage"
+                placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer-info">* Required Fields</span>
@@ -909,9 +925,79 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"
+          ><img src="img/close.svg" alt="Icon: close"
+        /></a>
+        <h3 class="modal__title modal__title-">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone number"
+            name="phone"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <div class="modal__bottom">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal-info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"
+          ><img src="img/close.svg" alt="Icon: close"
+        /></a>
+        <h3 class="modal__title modal__title-">Send us a feedback</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone number"
+            name="phone"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <div class="modal__bottom">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal-info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш&nbsp;API-ключ&lang=ru_RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -42,7 +42,7 @@
     line-height: 15px
     
 
-  &__ul
+  &__ul 
     padding: 0
     margin: 0
     list-style: none // отключает точки на элементах li
@@ -78,22 +78,20 @@
     text-decoration: none
     color: inherit
   &__input
-    background-color: #fff
-    border-radius: 4px
-    border: none
-    padding: 0 23px
-    height: 50px
+    
     margin-bottom: 15px
     flex-basis: 47%
   &__massage
-    background-color: #fff
-    border-radius: 4px
-    padding: 18px 23px
-    border: none
     flex-basis: 100%
     margin-bottom: 22px
     resize: none
+    cols: 30
+    rows: 10
+    min-height: 123px
+    // width: 100%
+    
   &__button
+    // margin-top: 22px
     min-width: 160px
     min-height: 50px
     padding: 18px
@@ -114,8 +112,8 @@
 
     
     &__info
-
       grid-column: 1 / 5
+      font-weight: bold
       font-size: 12px
       line-height: 15px
       color: white

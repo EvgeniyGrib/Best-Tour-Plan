@@ -33,6 +33,9 @@
   .footer
     &__input
       flex-basis: 100%
+  // .modal
+  //   &__dialog
+  //     top: 28%
 
 @media (max-width: 992px)
   .container, 
@@ -150,6 +153,10 @@
         grid-column: end
         width: 136px
         height: 22px
+  .modal
+    &__dialog
+      padding: 33px 65px
+      // min-width: 50%
 
 @media (max-width: 768px)
   .container
@@ -338,6 +345,11 @@
       &__image
         grid-column: 1
         justify-self: start
+  .modal
+    &__dialog
+      padding: 33px 50px
+      // min-width: 70%
+      // max-width: 90%
 
 @media ( max-width:576px )
   .logo
@@ -429,11 +441,26 @@
       flex-basis: 100% // вся ширина 
     &__button
       order: 1 // очередность. поменял местами с текстом
-
-
-@media ( max-width:320px )
+  
+.modal
+  &__dialog
+    max-width: 95%
+    padding: 33px 30px
+  &__bottom
+    flex-wrap: wrap
+  &__button
+    display: block
+    margin-right: 35px
+    // margin-bottom: 15px
+@media ( max-width:399px )
+  .modal
+    &__button
+      width: 100%
+      margin-right: 0
+      margin-bottom: 15px
+@media ( max-width:300px )
   .packages
     display: none
-
+      
      
   
