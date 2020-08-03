@@ -29,28 +29,6 @@ $(document).ready(function () {
     },
   });
 
-  // ========= MAP ==================
-
-  // Функция ymaps.ready() будет вызвана, когда
-  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-  ymaps.ready(init);
-
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [12.934923151175724, 100.88307986706273],
-      zoom: 15,
-      // behaviors: [], // если при наведении крутить колесик, то карта не будет зумиться
-    });
-    // Метка ------------------
-    var placemark = new ymaps.Placemark(
-      [12.934923151175724, 100.88307986706273],
-      {
-        hintContent: "Hilton Hotel", // при наведении всплывает подсказка
-      }
-    );
-    myMap.geoObjects.add(placemark);
-  }
-
   // ============= mobile menu =================
 
   var menuButton = document.querySelector(".menu-button");
@@ -86,6 +64,44 @@ $(document).ready(function () {
       closeModal();
     }
   };
+  // ========= MAP ==================
+  ymaps.ready(init);
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [12.934923151175724, 100.88307986706273],
+      zoom: 15,
+      // behaviors: [], // если при наведении крутить колесик, то карта не будет зумиться
+    });
+    // Метка ------------------
+    var placemark = new ymaps.Placemark(
+      [12.934923151175724, 100.88307986706273],
+      {
+        hintContent: "Hilton Hotel", // при наведении всплывает подсказка
+      }
+    );
+    myMap.geoObjects.add(placemark);
+  }
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Укажите имя",
+          minlength: "Имя должно быть не короче 2-х букв",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен",
+        },
+      },
+    });
+  });
+  // ============== Маски ==================
+  $(".phone").mask("+7(999) 999-99-99");
 });
 
 // ======== PARALAX ===================
