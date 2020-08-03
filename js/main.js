@@ -82,6 +82,13 @@ $(document).ready(function () {
     myMap.geoObjects.add(placemark);
   }
   // Обработка форм
+  $('[name="phone"]').on("input", function () {
+    $(this).val(
+      $(this)
+        .val()
+        .replace(/[A-Za-zА-Яа-яЁё]/, "")
+    );
+  });
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -96,6 +103,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Please enter at least 10 characters.",
         },
       },
     });
