@@ -301,21 +301,29 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title-">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Your Full Name"
-                name="name"
-              />
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Phone number"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone"
+                  placeholder="Phone number"
+                  name="phone"
+                  required
+                />
+              </div>
+
               <textarea
-                class="footer__massage"
+                class="message footer__massage"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -344,8 +352,10 @@
     <!-- /.footer -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш&nbsp;API-ключ&lang=ru_RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -87,15 +87,15 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Укажите имя",
-          minlength: "Имя должно быть не короче 2-х букв",
+          required: "Please enter a name",
+          minlength: "The name must be at least 2 letters",
         },
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
+          required: "Phone is required",
         },
       },
     });

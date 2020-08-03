@@ -673,7 +673,6 @@ template {
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .rating__text {
@@ -979,6 +978,7 @@ ymaps {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
