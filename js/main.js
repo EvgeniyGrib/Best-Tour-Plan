@@ -118,3 +118,9 @@ $(".newsletter-parallax").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
 
 // ============== AOS ==============
 AOS.init();
+AOS.init({
+  disable: function () {
+    var maxWidth = 768;
+    return window.innerWidth < maxWidth;
+  },
+});

@@ -1501,6 +1501,10 @@ ymaps {
   list-style: none;
 }
 
+.footer__ul-contact {
+  padding-left: 0;
+}
+
 .footer__title {
   font-weight: bold;
   font-size: 18px;
@@ -1531,12 +1535,23 @@ ymaps {
 }
 
 .footer__item-contact {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 18px;
+  -ms-grid-columns: 22px minmax(200px, 448px);
+      grid-template-columns: 22px minmax(200px, 448px);
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer__icon {
   width: 22px;
-  margin-right: 20px;
+  grid-row: span 9;
 }
 
 .footer__text {
@@ -1599,6 +1614,7 @@ ymaps {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 75px;
 }
 
 .footer-bottom__info {

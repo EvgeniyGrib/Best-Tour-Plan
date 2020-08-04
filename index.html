@@ -9,6 +9,8 @@
     /> -->
     <!-- с сайта яндекс API про подключение -->
     <title>Best Tour Plan</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -940,14 +942,18 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <h3 class="footer__title footer__title-bottom">
-              Contact Details cherly.lawson@example.com
+              Contact Details
             </h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
-            <ul class="footer__ul">
+            <ul class="footer__ul-contact">
               <li class="footer__item footer__item-contact">
                 <img
                   class="footer__icon"
@@ -961,10 +967,21 @@
                   class="footer__icon"
                   src="img/contact-phone-call.svg"
                   alt="Icon: contact-phone-call"
-                />Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                />
+                <span
+                  >Tel (business hours) :
+                  <a class="footer__link" href="tel:2691500">269 1500</a></span
+                >
+                <span
+                  >Tel (hotline) Monday - Saturday:
+                  <a class="footer__link" href="tel:52566138">52-56-61-38</a>
+                  (08:00 am – 20:00 pm)</span
+                >
+                <span
+                  >Tel (hotline) Sunday:
+                  <a class="footer__link" href="tel:52566138">52-56-61-38</a>
+                  (08:00 am – 14:00 pm)</span
+                >
               </li>
               <li class="footer__item footer__item-contact">
                 <img
@@ -1015,21 +1032,21 @@
           </div>
           <!-- /.footer__contacts-form -->
           <div class="footer-bottom">
-            <div
-              class="footer-bottom__info"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              <span class="footer-bottom__info-span">Disclaimer</span>
-              <span class="footer-bottom__info-span">Conditions of use</span>
-              <span class="footer-bottom__info-span">Cancellation policy</span>
+            <div class="footer-bottom__info">
+              <span class="footer-bottom__info-span"
+                ><a href="#" class="footer__link">Disclaimer</a></span
+              >
+              <span class="footer-bottom__info-span"
+                ><a href="#" class="footer__link">Conditions of use</a></span
+              >
+              <span class="footer-bottom__info-span"
+                ><a href="#" class="footer__link">Cancellation policy</a></span
+              >
             </div>
             <img
               src="img/payment.jpg"
               alt="Image: payments"
               class="footer-bottom__image"
-              data-aos="fade-right"
-              data-aos-delay="300"
             />
           </div>
         </div>
@@ -1085,47 +1102,6 @@
     </div>
     <!-- /.modal -->
 
-    <!-- ============== rating-modal ================
-
-      <div class="modal" id="rating-modal">
-      <div class="modal__overlay"></div>
-       
-      <div class="modal__dialog">
-        <a href="#" class="modal__close"
-          ><img src="img/close.svg" alt="Icon: close"
-        /></a>
-        <h3 class="modal__title modal__title-">Send us a feedback</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name"
-            name="name"
-            required
-          />
-
-          <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Phone Number"
-            name="phone"
-            required
-          />
-
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__bottom">
-            <button class="button modal__button" type="submit">Send</button>
-            <span class="modal-info">* Required Fields</span>
-          </div>
-        </form>
-      </div>
-    </div>
-           
-      ================== /.rating-modal ================= -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш&nbsp;API-ключ&lang=ru_RU"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
