@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -91,35 +92,63 @@
               </form>
             </li>
 
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <a href="#" class="navbar-menu__link">
                 All Deals
               </a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <a href="#" class="navbar-menu__link">
                 Hotels
               </a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <a href="#" class="navbar-menu__link"> Activities</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               <a href="#" class="navbar-menu__link">
                 Hotel Day Packages
               </a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               <a href="#" class="navbar-menu__link">
                 Restaurants
               </a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               <a href="#" class="navbar-menu__link">
                 Events
               </a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="fade-right"
+              data-aos-delay="700"
+            >
               <a href="#" class="navbar-menu__link">
                 Rodrigues
               </a>
@@ -216,7 +245,7 @@
           <!-- /.swiper container -->
 
           <div class="hotel-right">
-            <div class="booking">
+            <div class="booking" data-aos="fade-left" data-aos-delay="800">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price start as</span>
@@ -265,7 +294,13 @@
             </div>
             <!-- /.booking -->
             <!-- <div class="map-api"> -->
-            <div class="map" id="map" style="height: 213px;"></div>
+            <div
+              class="map"
+              id="map"
+              style="height: 213px;"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            ></div>
             <!-- </div> -->
             <!-- /.map -->
           </div>
@@ -278,10 +313,16 @@
     <!-- /.hotel -->
     <section class="packages">
       <div class="packages-container container">
-        <h2 class="packages-container__heading">Other Packages</h2>
+        <h2
+          class="packages-container__heading"
+          data-aos="fade-bottom"
+          data-aos-duration="500"
+        >
+          Other Packages
+        </h2>
         <div class="packages-container__cards">
           <!-- ===== Начало первой =========== -->
-          <div class="active-card">
+          <div class="active-card" data-aos="fade-right" data-aos-delay="100">
             <div class="active-picture">
               <img
                 class="active-picture__image"
@@ -351,7 +392,7 @@
           <!-- ======== Конец первой ============ -->
 
           <!-- ===== Начало второй =========== -->
-          <div class="inactive-card">
+          <div class="inactive-card" data-aos="fade-right" data-aos-delay="300">
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
@@ -408,7 +449,7 @@
           <!-- ======== Конец второй ============ -->
 
           <!-- ===== Начало третьей =========== -->
-          <div class="inactive-card">
+          <div class="inactive-card" data-aos="fade-right" data-aos-delay="100">
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
@@ -465,7 +506,7 @@
           <!-- ======== Конец третьей ============ -->
 
           <!-- ===== Начало четвертой =========== -->
-          <div class="inactive-card">
+          <div class="inactive-card" data-aos="fade-right" data-aos-delay="300">
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
@@ -522,7 +563,7 @@
           <!-- ======== Конец четвертой ============ -->
 
           <!-- ===== Начало пятой =========== -->
-          <div class="inactive-card">
+          <div class="inactive-card" data-aos="fade-right" data-aos-delay="500">
             <div class="inactive-picture">
               <img
                 class="inactive-picture__image"
@@ -585,7 +626,11 @@
     <!-- /.other-packages -->
     <section class="newsletter newsletter-parallax" data-parallax="scroll">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -594,6 +639,8 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__search"
+          data-aos="fade-right"
+          data-aos-delay="300"
         >
           <input
             type="email"
@@ -610,7 +657,13 @@
     <!-- /.newsletter -->
     <section class="revievs">
       <div class="container">
-        <h2 class="reviews-title">What people things about us</h2>
+        <h2
+          class="reviews-title"
+          data-aos="fade-bottom"
+          data-aos-duration="500"
+        >
+          What people things about us
+        </h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -701,9 +754,15 @@
     <!-- /.revievs -->
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other activities</h2>
+        <h2 class="activities__title">
+          Other activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="img/image-ativity-1.jpg"
               alt="image-ativity-1"
@@ -713,7 +772,11 @@
             <button class="card__button button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/image-ativity-2.jpg"
               alt="image-ativity-2"
@@ -723,7 +786,11 @@
             <button class="card__button button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <img
               src="img/image-ativity-3.jpg"
               alt="image-ativity-3"
@@ -736,7 +803,11 @@
             <button class="card__button button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
             <img
               src="img/image-ativity-4.jpg"
               alt="image-ativity-4"
@@ -758,8 +829,14 @@
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
           />
-          <div class="footer__list footer__categories">
+          <div
+            class="footer__list footer__categories"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -789,7 +866,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list footer__additional">
+          <div
+            class="footer__list footer__additional"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -815,8 +896,14 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
-            <h3 class="footer__title footer__title-inline">Social Network</h3>
+          <div
+            class="footer__social-network"
+            data-aos="fade-left"
+            data-aos-delay="900"
+          >
+            <h3 class="footer__title footer__title-inline">
+              Social Network
+            </h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook"
@@ -831,7 +918,11 @@
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div
+            class="footer__list footer__legal"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -850,7 +941,9 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title-bottom">Contact Details</h3>
+            <h3 class="footer__title footer__title-bottom">
+              Contact Details cherly.lawson@example.com
+            </h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -883,7 +976,11 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h3 class="footer__title footer__title-">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
@@ -918,7 +1015,11 @@
           </div>
           <!-- /.footer__contacts-form -->
           <div class="footer-bottom">
-            <div class="footer-bottom__info">
+            <div
+              class="footer-bottom__info"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <span class="footer-bottom__info-span">Disclaimer</span>
               <span class="footer-bottom__info-span">Conditions of use</span>
               <span class="footer-bottom__info-span">Cancellation policy</span>
@@ -927,6 +1028,8 @@
               src="img/payment.jpg"
               alt="Image: payments"
               class="footer-bottom__image"
+              data-aos="fade-right"
+              data-aos-delay="300"
             />
           </div>
         </div>
@@ -1024,11 +1127,12 @@
            
       ================== /.rating-modal ================= -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш&nbsp;API-ключ&lang=ru_RU"></script>
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

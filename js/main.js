@@ -115,3 +115,6 @@ $(document).ready(function () {
 // ======== PARALAX ===================
 
 $(".newsletter-parallax").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
+
+// ============== AOS ==============
+AOS.init();
