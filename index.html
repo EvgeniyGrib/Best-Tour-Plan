@@ -41,7 +41,7 @@
               placeholder="Search Location"
             />
             <button class="search__button button">
-              <img src="img/search.svg" alt="Icon: search" />
+              <img data-src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
 
@@ -71,7 +71,7 @@
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
               <a href="#" class="user navbar__user navbar__user_mobile_visible">
                 <img
-                  src="img/user-avater.jpeg"
+                  data-src="img/user-avater.jpeg"
                   alt="Avatar: Nathan"
                   class="user__avatar"
                 />
@@ -89,7 +89,7 @@
                   placeholder="Search Location"
                 />
                 <button class="search__button button">
-                  <img src="img/search.svg" alt="Icon: search" />
+                  <img data-src="img/search.svg" alt="Icon: search" />
                 </button>
               </form>
             </li>
@@ -185,11 +185,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -281,7 +281,7 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
-                  <img src="img/phone-call.svg" alt="Icon: phone" />
+                  <img data-src="img/phone-call.svg" alt="Icon: phone" />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
@@ -335,11 +335,11 @@
             </div>
             <div class="active-info">
               <div class="active-info__rating">
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
-                <img src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
+                <img data-src="img/star.svg" alt="Star" />
               </div>
               <h3 class="active-info__title">Hotel Blue Haven</h3>
               <p class="active-info__text">
@@ -351,7 +351,7 @@
               </p>
               <div class="active-info__item">
                 <img
-                  src="img/geo.svg"
+                  data-src="img/geo.svg"
                   alt="Icon: geo"
                   class="active-info__item-icon"
                 />
@@ -363,7 +363,7 @@
 
               <div class="active-info__item">
                 <img
-                  src="img/user.svg"
+                  data-src="img/user.svg"
                   alt="Icon: user"
                   class="active-info__item-icon"
                 />
@@ -373,7 +373,7 @@
 
               <div class="active-info__item">
                 <img
-                  src="img/home.svg"
+                  data-src="img/home.svg"
                   alt="Icon: home"
                   class="active-info__item-icon"
                 />
@@ -384,7 +384,11 @@
                 <span class="active-info__price-old">$ 10,500</span>
                 <span class="active-info__price-new">$ 8,500</span>
               </div>
-              <button class="active-info__button button">
+              <button
+                class="active-info__button button"
+                data-toggle="modal"
+                data-href="#booking-modal"
+              >
                 Book Now
               </button>
             </div>
@@ -408,7 +412,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/geo.svg"
+                  data-src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -420,7 +424,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/user.svg"
+                  data-src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -430,7 +434,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/home.svg"
+                  data-src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -441,7 +445,11 @@
                 <span class="inactive-info__price-old">$ 8,500</span>
                 <span class="inactive-info__price-new">$ 3,000</span>
               </div>
-              <button class="inactive-info__button button">
+              <button
+                class="inactive-info__button button"
+                data-toggle="modal"
+                data-href="#booking-modal"
+              >
                 Book Now
               </button>
             </div>
@@ -465,7 +473,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/geo.svg"
+                  data-src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -477,7 +485,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/user.svg"
+                  data-src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -487,7 +495,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/home.svg"
+                  data-src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -498,7 +506,11 @@
                 <span class="inactive-info__price-old">$ 10,500</span>
                 <span class="inactive-info__price-new">$ 9,500</span>
               </div>
-              <button class="inactive-info__button button">
+              <button
+                class="inactive-info__button button"
+                data-toggle="modal"
+                data-href="#booking-modal"
+              >
                 Book Now
               </button>
             </div>
@@ -522,7 +534,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/geo.svg"
+                  data-src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -534,7 +546,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/user.svg"
+                  data-src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -544,7 +556,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/home.svg"
+                  data-src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -555,7 +567,11 @@
                 <span class="inactive-info__price-old">$ 4,500</span>
                 <span class="inactive-info__price-new">$ 2,500</span>
               </div>
-              <button class="inactive-info__button button">
+              <button
+                class="inactive-info__button button"
+                data-toggle="modal"
+                data-href="#booking-modal"
+              >
                 Book Now
               </button>
             </div>
@@ -579,7 +595,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/geo.svg"
+                  data-src="img/geo.svg"
                   alt="Icon: geo"
                   class="inactive-info__item-icon"
                 />
@@ -591,7 +607,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/user.svg"
+                  data-src="img/user.svg"
                   alt="Icon: user"
                   class="inactive-info__item-icon"
                 />
@@ -601,7 +617,7 @@
 
               <div class="inactive-info__item">
                 <img
-                  src="img/home.svg"
+                  data-src="img/home.svg"
                   alt="Icon: home"
                   class="inactive-info__item-icon"
                 />
@@ -612,7 +628,11 @@
                 <span class="inactive-info__price-old">$ 6,500</span>
                 <span class="inactive-info__price-new">$ $ 3,500</span>
               </div>
-              <button class="inactive-info__button button">
+              <button
+                class="inactive-info__button button"
+                data-toggle="modal"
+                data-href="#booking-modal"
+              >
                 Book Now
               </button>
             </div>
@@ -680,11 +700,11 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -716,11 +736,11 @@
                   <h3 class="reviews-slider__username">Mary Fler</h3>
                   <span class="reviews-slider__date">Stayed 7 June, 2020</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
-                    <img src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
+                    <img data-src="img/star.svg" alt="Star" />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -771,7 +791,13 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button button">Book Now</button>
+            <button
+              class="card__button button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
@@ -785,7 +811,13 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button button">Book Now</button>
+            <button
+              class="card__button button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
@@ -802,7 +834,13 @@
               Tamarind falls hiking <br />
               trip - full day
             </h3>
-            <button class="card__button button">Book Now</button>
+            <button
+              class="card__button button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
@@ -816,7 +854,13 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button button">Book Now</button>
+            <button
+              class="card__button button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -908,13 +952,13 @@
             </h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
-                ><img src="img/facebook.svg" alt="Icon: facebook"
+                ><img data-src="img/facebook.svg" alt="Icon: facebook"
               /></a>
               <a href="#" class="footer__link"
-                ><img src="img/youtube.svg" alt="Icon: youtube"
+                ><img data-src="img/youtube.svg" alt="Icon: youtube"
               /></a>
               <a href="#" class="footer__link"
-                ><img src="img/instagram.svg" alt="Icon: instagram"
+                ><img data-src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
@@ -988,7 +1032,13 @@
                   class="footer__icon"
                   src="img/email.svg"
                   alt="Icon: email"
-                />cherly.lawson@example.com
+                /><span
+                  ><a
+                    class="footer__link"
+                    href="mailto:cherly.lawson@example.com"
+                    >cherly.lawson@example.com</a
+                  ></span
+                >
               </li>
             </ul>
           </div>
@@ -1060,7 +1110,7 @@
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close"
-          ><img src="img/close.svg" alt="Icon: close"
+          ><img data-src="img/close.svg" alt="Icon: close"
         /></a>
         <h3 class="modal__title modal__title-">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">

@@ -42,7 +42,7 @@ try {
     $mail->setFrom('gribevgenij779@gmail.com', 'Евгений Гриб'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    // $mail->addAddress('youremail@yandex.ru');  
+    // $mail->addAddress($costumerMail);  
     $mail->addAddress('evg.grib@mail.ru'); // Ещё один, если нужен
 
 // Отправка сообщения
