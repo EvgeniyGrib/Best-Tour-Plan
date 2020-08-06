@@ -107,7 +107,7 @@ var ymap = function () {
         spinner.removeClass("is-active");
       }, 1000);
       $(".ymap-container").append(
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6647.356340050885!2d98.29762131441633!3d7.838227891847006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596743709428!5m2!1sru!2sru" width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+        '<iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6647.363191632843!2d98.2977476201733!3d7.837798889256439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596747536945!5m2!1sru!2sru" width="347" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
       );
     }
   });
