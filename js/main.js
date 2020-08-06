@@ -103,6 +103,7 @@ var ymap = function () {
 
       // Показываем индикатор загрузки до тех пор, пока карта не загрузится
       spinner.addClass("is-active");
+
       setTimeout(function () {
         spinner.removeClass("is-active");
       }, 1000);
