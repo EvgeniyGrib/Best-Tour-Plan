@@ -67,16 +67,14 @@
     0 == d.length
       ? (this.$slider = f("<img />").prependTo(this.$mirror))
       : ((this.$slider = d.prependTo(this.$mirror)), (h = !0));
-    this.$mirror
-      .addClass("parallax-mirror")
-      .css({
-        visibility: "hidden",
-        zIndex: this.zIndex,
-        position: "fixed",
-        top: 0,
-        left: 0,
-        overflow: "hidden",
-      });
+    this.$mirror.addClass("parallax-mirror").css({
+      visibility: "hidden",
+      zIndex: this.zIndex,
+      position: "fixed",
+      top: 0,
+      left: 0,
+      overflow: "hidden",
+    });
     this.$slider.addClass("parallax-slider").one("load", function () {
       (e.naturalHeight && e.naturalWidth) ||
         ((e.naturalHeight = this.naturalHeight || this.height || 1),
@@ -312,3 +310,4 @@
     f('[data-parallax="scroll"]').parallax();
   });
 })(jQuery, window, document);
+$(".newsletter-parallax").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
