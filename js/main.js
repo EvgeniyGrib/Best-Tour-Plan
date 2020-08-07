@@ -24,9 +24,6 @@ $(document).ready(function () {
     keyboard: { enabled: !0, onlyInViewport: !1 },
   });
   document.querySelector(".menu-button").addEventListener("click", function () {
-    console.log(
-      "\u041a\u043b\u0438\u043a \u043f\u043e \u043a\u043d\u043e\u043f\u043a\u0435 \u043c\u0435\u043d\u044e"
-    );
     document
       .querySelector(".navbar-bottom")
       .classList.toggle("navbar-bottom_visible");
@@ -42,16 +39,7 @@ $(document).ready(function () {
   window.onkeydown = function () {
     "Escape" == event.key && c();
   };
-  // ymaps.ready(function () {
-  //   var a = new ymaps.Map("map", {
-  //       center: [12.934923151175724, 100.88307986706273],
-  //       zoom: 15,
-  //     }),
-  //     b = new ymaps.Placemark([12.934923151175724, 100.88307986706273], {
-  //       hintContent: "Hilton Hotel",
-  //     });
-  //   a.geoObjects.add(b);
-  // });
+
   $('[name="phone"]').on("input", function () {
     $(this).val(
       $(this)

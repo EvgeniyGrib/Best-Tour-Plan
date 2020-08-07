@@ -161,10 +161,7 @@
         grid-column: end
         width: 136px
         height: 22px
-  .modal
-    &__dialog
-      padding: 33px 65px
-      // min-width: 50%
+
 
 @media (max-width: 768px)
   .container
@@ -266,11 +263,25 @@
   .google_map
     width: 576px
   .newsletter
+    padding: 76px 0 83px 
+    height: 319px
+    &__title
+      margin-bottom: 37px 
+      
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
     &-wrapper
       flex-direction: column
       max-width: 576px
       width: 92%
       align-items: flex-start
+      height: 100%
   .reviews
     &-slider
       &__item
@@ -282,11 +293,11 @@
         top: 30px
         &--prev
           left: 50%
-          margin-left: -65px
+          margin-left: -80px
           transform: translateX(-50%)
         &--next
           right: 50%
-          margin-right: -65px
+          margin-right: -80px
           transform: translateX(50%)
     &-title
       font-size: 30px
@@ -349,6 +360,7 @@
 
     &-bottom
       display: grid
+      padding-top: 56px
       &__info
         margin: 0
         margin-bottom: 10px
@@ -359,8 +371,50 @@
   .modal
     &__dialog
       padding: 33px 50px
-      // min-width: 70%
-      // max-width: 90%
+      
+@media only screen and (max-height: 320px)
+  .navbar
+    &-bottom
+      padding-top: 10px
+      &_visible
+        display: flex
+    &__user
+      &_mobile
+        &_visible
+        
+    &__search
+      &_mobile
+        &_visible
+          
+
+    &-menu
+      flex-direction: row
+      flex-wrap: wrap
+      padding: 0
+      &__item
+        &_mobile
+          &_visible
+            margin-bottom: 25px
+            
+      &__top
+        &_mobile
+          &_visible
+            display: flex
+            flex-direction: column
+            align-items: start
+            align-items: center
+            align-self: start
+            margin-top: 30px
+        
+        
+      &__bottom
+        &_mobile
+          &_visible
+            display: flex
+            flex-direction: column
+            align-items: start
+            order: -1
+
 
 @media ( max-width:576px )
   .logo
@@ -405,7 +459,15 @@
     width: 100%
     &__title
       max-width: 200px
-
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
+  .packages
+    &-container
+      &__heading
+        font-size: 18px 
+        line-height: 23px
   .footer  
     display: grid
     &-wrapper
@@ -455,7 +517,7 @@
 .modal
   &__dialog
     max-width: 95%
-    padding: 33px 30px
+    // padding: 33px 30px
   &__bottom
     flex-wrap: wrap
   &__button
@@ -468,9 +530,35 @@
       width: 100%
       margin-right: 0
       margin-bottom: 15px
+@media ( max-width:350px )
+  .button
+    &__back-1
+      display: none
+    &__back-2
+      display: block
+
+@media ( max-width:320px )
+  .navbar
+    &__search
+      width: 87%
+    &-menu
+      padding: 0
+      &__item_mobile_visible
+        margin: 0
+    &__user_mobile_visible
+      margin-bottom: 27px
+    &__search_mobile_visible
+      margin-bottom: 39px
+  .footer
+    &-bottom
+      padding-top: 30px
+  .modal
+    &__dialog
+      padding: 30px 26px
 @media ( max-width:300px )
   .packages
     display: none
+
       
      
   
