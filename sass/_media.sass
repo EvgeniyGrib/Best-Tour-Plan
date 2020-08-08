@@ -78,9 +78,7 @@
       width: 100%
   .booking
     width: 340px
-  .map  
-    margin-left: 20px
-    width: 340px
+  
     
   .reviews
     &-slider
@@ -263,6 +261,7 @@
   .ymap-container 
     width: 100%
     margin: 0 
+    
   .google_map
     width: 576px
   .newsletter
@@ -411,8 +410,7 @@
       // line-height: 30px
   .booking
     height: 210px
-  #mapDiv 
-    height: 172px
+  
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -537,6 +535,8 @@
       display: block
 
 @media ( max-width:320px )
+  .container
+    width: 280px
   .navbar
     &__search
       width: 87%
@@ -562,9 +562,35 @@
         margin-top: 5px
       &-description 
         margin: 2px 0
+  .ymap-container, #mapDiv
+    height: 173px
+  .subscribe
+    width: 280px
+  .reviews
+    &-title
+      margin-top: 13px
+  .reviews-slider__button--prev 
+    margin-left: -93px
+  .reviews-slider__button--next 
+    margin-right: -93px
+  .activities
+    &__title
+      margin-bottom: 36px
+      margin-top: 56px
+  .card
+    height: 255px
+    width: 100%
   .footer
     &-bottom
-      padding-top: 30px
+      padding-top: 0
+    &-bottom
+      &__image
+        grid-column: span 2
+
+      &__info
+        display: flex
+        justify-content: flex-start
+
   .modal
     &__dialog
       padding: 30px 26px
