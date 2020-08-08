@@ -61,7 +61,7 @@ if ($email == null) {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $modal;
-} else() {
+} elseif(($email != null and $phone == null)) {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $sendMail;
