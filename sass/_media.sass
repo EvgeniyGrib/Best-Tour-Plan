@@ -372,12 +372,6 @@
       padding: 33px 50px
       
 @media only screen and (max-height: 320px)
-  .modal
-    &__dialog
-      height: 96%
-      overflow: scroll
-    &__bottom
-      margin-bottom: 20px
   // .navbar
   //   &-menu
   //     display: grid
@@ -392,6 +386,39 @@
   //       justify-content: space-between
   //       align-items: center
 
+.packages
+  &-container
+    &__heading
+      font-size: 18px
+      line-height: 23px
+  .inactive
+    &-card
+      grid-template: repeat(2, 250px)/100%
+      grid-column: 1 / 2  
+    &-picture
+      &__image
+        width: 100%
+  .active
+    &-card
+      grid-template: repeat(2, 250px) / 100%
+    &-info
+      padding: 30px 21px 25px 32px
+      border-radius: 0px 0px 8px 8px
+      &__rating
+        display: none
+      &__text
+        display: none
+    &-picture
+      &__image
+        border-radius: 8px 8px 8px 8px
+        width: 100%
+
+  .modal
+    &__dialog
+      height: 96%
+      overflow: scroll
+    &__bottom
+      margin-bottom: 20px
 @media ( max-width:576px )
   .logo
     width: 99px
@@ -447,6 +474,23 @@
       &__heading
         font-size: 18px 
         line-height: 23px
+  .inactive
+    &-card
+      grid-template: repeat(2, 250px)/294px
+      grid-column: 1 / 2  
+  .active
+    &-card
+      grid-template: repeat(2, 250px) / 294px
+    &-info
+      padding: 30px 21px 25px 32px
+      border-radius: 0px 0px 8px 8px
+      &__rating
+        display: none
+      &__text
+        display: none
+    &-picture
+      &__image
+        border-radius: 8px 8px 8px 8px
   .footer  
     display: grid
     &-wrapper
