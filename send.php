@@ -22,6 +22,13 @@ $body = "
 $sendMail = "
 <b>Почта клиента для рассылки новостей: $email</b>
 ";
+$modal = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон  :</b> $phone<br><br>
+<b>Почта клиента для рассылки новостей: $email</b><br>
+<b>Сообщение:</b><br>$message
+";
 
 
 // Настройки PHPMailer
@@ -50,7 +57,11 @@ if ($email == null) {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $body;
-} else {
+} elseif($email != null && $phone != null) {
+    $mail->isHTML(true);
+    $mail->Subject = $title;
+    $mail->Body = $modal;
+} else() {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $sendMail;
